@@ -22,8 +22,6 @@ RUN /bin/bash -c "mkdir -p custom_ws/src/"
 COPY dolores_lane_filter custom_ws/src/dolores_lane_filter
 RUN chmod +x custom_ws/src/dolores_lane_filter/src/lane_filter_node.py
 
-RUN /bin/bash -c "cd custom_ws/src/"
-
 ## Do not change the below line! This ensures that your workspace is overlayed on top of the Duckietown stack!
 ## MAKE sure this line is present in the build: This workspace overlays: /home/software/catkin_ws/devel;/opt/ros/kinetic
 RUN /bin/bash -c "source /home/software/catkin_ws/devel/setup.bash && catkin_init_workspace && cd ../.."
