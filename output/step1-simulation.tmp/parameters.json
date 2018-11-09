@@ -1,0 +1,19 @@
+services:
+  evaluator:
+    environment: {launcher_parameters: "challenge: LF\nepisodes: 5\nsteps_per_episode:\
+        \ 500\ninclude_map: true\nenvironment-constructor: Simulator\nenvironment-parameters:\
+        \ {seed: 123, map_name: loop_empty, max_steps: 500001, domain_rand: 0,\n \
+        \ camera_width: 640, camera_height: 480, accept_start_angle_deg: 4, full_transparency:\
+        \ true,\n  distortion: true}\nagent-info: {challenge: LF}\n", solution_parameters: '{env:
+        Duckietown-Lf-Lfv-Navv-Silent-v1}
+
+        '}
+    image: andreacensi/aido1_lf1_r3-v3-step1-simulation-evaluator:2018_11_08_16_21_06
+    image_digest: sha256:1a38b3f788d7df521716b060888cdbe4fc56ea77596ca5043591eff4e9560ca5
+  solution:
+    environment: {}
+    image: SUBMISSION_CONTAINER
+    image_digest: null
+version: '3'
+
+s: sha256:54b4a81bfd789edd655f51c30c2eb6e9a5a2410545fe8748ea13555f86be3c6f
