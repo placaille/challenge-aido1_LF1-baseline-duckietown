@@ -26,7 +26,7 @@ RUN chmod +x custom_ws/src/dolores_lane_filter/src/lane_filter_node.py
 ## MAKE sure this line is present in the build: This workspace overlays: /home/software/catkin_ws/devel;/opt/ros/kinetic
 RUN /bin/bash -c "source /home/software/catkin_ws/devel/setup.bash && catkin_init_workspace && cd ../.."
 RUN /bin/bash -c "source /home/software/catkin_ws/devel/setup.bash && catkin_make -j -C custom_ws/"
-RUN /bin/bash -c "source custom_ws/devel/setup.bash"
+RUN echo "source custom_ws/devel/setup.bash" >> ~/.bashrc
 
 #### END CUSTOM CATKIN_WS ####
 
