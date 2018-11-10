@@ -19,8 +19,14 @@ COPY lf_slim.launch ./
 RUN /bin/bash -c "mkdir -p custom_ws/src/"
 
 ## Copy or init your packages in here
+
+# lane filter package
 COPY aido-challenge-custom_code/dolores_lane_filter custom_ws/src/dolores_lane_filter
 RUN chmod +x custom_ws/src/dolores_lane_filter/src/lane_filter_node.py
+
+# lane control package
+COPY aido-challenge-custom_code/dolores_lane_control custom_ws/src/dolores_lane_control
+RUN chmod +x custom_ws/src/dolores_lane_control/scripts/lane_controller_node.py
 
 ## Do not change the below line! This ensures that your workspace is overlayed on top of the Duckietown stack!
 ## MAKE sure this line is present in the build: This workspace overlays: /home/software/catkin_ws/devel;/opt/ros/kinetic
