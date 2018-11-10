@@ -19,7 +19,7 @@ COPY lf_slim.launch ./
 RUN /bin/bash -c "mkdir -p custom_ws/src/"
 
 ## Copy or init your packages in here
-COPY dolores_lane_filter custom_ws/src/dolores_lane_filter
+COPY aido-challenge-custom_code/dolores_lane_filter custom_ws/src/dolores_lane_filter
 RUN chmod +x custom_ws/src/dolores_lane_filter/src/lane_filter_node.py
 
 ## Do not change the below line! This ensures that your workspace is overlayed on top of the Duckietown stack!

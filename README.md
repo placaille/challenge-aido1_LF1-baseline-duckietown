@@ -2,6 +2,11 @@
 
 Private repo cloned from [here](https://github.com/duckietown/challenge-aido1_LF1-baseline-duckietown.git)
 
+### Custom packages
+
+Custom packages must be placed in `/aido-challenge-custom_code` at the root of this repo. The repo for the custom packages for the AIDO Lane-Following Challenge can be found [here](https://github.com/placaille/aido-challenge-custom_code.git).
+
+
 ---
 
 # AI Driving Olympics
