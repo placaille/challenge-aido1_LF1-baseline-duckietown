@@ -20,6 +20,10 @@ RUN /bin/bash -c "mkdir -p custom_ws/src/"
 
 ## Copy or init your packages in here
 
+# line detector package
+COPY aido-challenge-custom_code/dolores_line_detector custom_ws/src/dolores_line_detector
+RUN chmod +x custom_ws/src/dolores_line_detector/src/line_detector_node.py
+
 # lane filter package
 COPY aido-challenge-custom_code/dolores_lane_filter custom_ws/src/dolores_lane_filter
 RUN chmod +x custom_ws/src/dolores_lane_filter/src/lane_filter_node.py
