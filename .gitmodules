@@ -1,0 +1,3 @@
+[submodule "aido-challenge-custom_code"]
+	path = aido-challenge-custom_code
+	url = https://github.com/placaille/aido-challenge-custom_code.git
